@@ -26,7 +26,7 @@
 
         <div class="table-area">
           <div>
-            <el-table :data="tableData" style="width: 100%" height="450">
+            <el-table :data="tableData" style="width: 100%" height="528">
               <el-table-column
                 :prop="item"
                 :label="item"
@@ -227,7 +227,8 @@ export default {
   margin-top: 15px;
   background: #fff;
   padding: 15px;
-  height: 550px;
+  // height: 550px;
+  height: 100%;
 }
 
 .input-file {
@@ -253,5 +254,23 @@ export default {
 
 .drawer-footer {
   text-align: center;
+}
+.table-area{
+  >>>.el-table__header-wrapper{
+      display: flex;
+      justify-content: center;
+     align-items: center;
+
+  }
+  >>>.el-table__body, .el-table__footer, .el-table__header{
+    // width: 100%  !important;
+  }
+  >>>.el-table--fit{
+    .el-table__header-wrapper{
+      .el-table__body, .el-table__footer, .el-table__header{
+        // width: 100%  !important;
+      }
+    }
+  }
 }
 </style>

@@ -1,7 +1,7 @@
     <!--  excel表格上传  -->
 <template>
   <div>
-    <div><p>文件上传预览</p></div>
+    <div><p>文件上传预览(固定页头)</p></div>
     <el-upload
       class="upload-demo"
       drag
