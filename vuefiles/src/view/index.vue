@@ -27,6 +27,10 @@
             <i class="el-icon-setting"></i>
             <span slot="title">文件上传预览</span>
           </el-menu-item>
+          <el-menu-item index="5">
+            <i class="el-icon-setting"></i>
+            <span slot="title">文件上传解析</span>
+          </el-menu-item>
         </el-menu>
       </el-aside>
       <el-container>

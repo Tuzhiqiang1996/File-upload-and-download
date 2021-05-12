@@ -7,6 +7,7 @@
     <div v-if="num == 2"><Upfile /></div>
     <div v-if="num == 3"><Upimg /></div>
     <div v-if="num == 4"><UpfileEx /></div>
+    <div v-if="num == 5"><UpdataV /></div>
   </div>
 </template>
 
@@ -17,10 +18,11 @@ import HelloWorld from "../components/HelloWorld";
 import Upfile from "../components/Upfile";
 import Upimg from "../components/Upimg";
 import UpfileEx from "../components/UpfileEx";
+import UpdataV from "../components/updataV";
 export default {
   name: "",
   //import引入的组件需要注入到对象中才能使用
-  components: { HelloWorld, Upfile, Upimg, UpfileEx },
+  components: { HelloWorld, Upfile, Upimg, UpfileEx, UpdataV },
   props: ["num"],
   data() {
     //这里存放数据
@@ -52,8 +54,8 @@ export default {
   display: flex;
   justify-content: center;
   text-align: center;
-  div{
-    width:100%
+  div {
+    width: 100%;
   }
 }
 </style>
